@@ -1,0 +1,120 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*os elementos não ultrapassam o limite da caixa*/
+}
+/* elementos base */
+body {
+    background: var(--preta);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*Se não definir já é row por padrão*/ 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+    transition: ease-in-out 300ms;
+}
+
+/* DESTAQUE */
+.container{
+    margin-left: 15px;
+}
+.destaque{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/img/solo.png");
+    /* linear-gradient pede 2 cores e cria um gradiente entre elas */
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+}
+.destaque .container{
+    width: 70%;
+}
+.destaque .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* BOTÕES DA IMAGEM EM DESTAQUE*/
+.botao, .option{
+    background-color: rgba(0,0,0, .50);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.botao:hover, .option:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in 300ms;
+}
+.options{
+    position: absolute;
+    top: 5px;
+    justify-content: center;
+}
+.botoes{
+    bottom: 5px;
+    position: absolute;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+/* CARROSSEL */
+.item{
+    cursor: pointer;
+}
+.item img{
+    background-size: cover;
+    max-height: 350px;
+}
+.box_capas{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel_capas{
+    margin-top: 5px;
+}

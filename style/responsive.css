@@ -1,0 +1,33 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao, .option{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        align-items: center;
+    }
+    .botoes, .options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 0 1rem 0 1rem;
+    }
+    .destaque .container{
+        width: 90%;
+    }
+    nav a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
+    }
+}
